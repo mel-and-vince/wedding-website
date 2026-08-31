@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mel and Vince: The A-List - Home</title>
+</head>
+
+<style>
+* {box-sizing: border-box}
+</style>
+
+<body style="background-color: black;
+      background-image: url('backgrounds/movie-posters-t.jpg');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: auto 100%;">
+
+
+  <header>
+    <!-- Navigation bar -->
+    <div class="topnav">
+      <a class="active" href="main.html"; style="font-weight: 100;">Home</a>
+      <a href="info.html"; style="font-weight: 100;">Details</a>
+      <a href="schedule.html"; style="font-weight: 100;">Schedule</a>
+      <a href="gallery.html"; style="font-weight: 100;">Gallery</a>
+      <a href="registry.html"; style="font-weight: 100;">Registry</a>
+      <a href="rsvp.html"; style="font-weight: 100;">RSVP</a>
+    </div>
+
+    <!-- Title -->
+    <div class="container">
+      <h1 style="font-family: 'NeoNeon'; font-size: clamp(0rem, 7.5vh, 5rem); font-weight: 100; margin-top: 5vh; margin-bottom: 1vh; line-height: .5">Welcome to</h1>
+      <h1 style="font-family: 'NeoNeon'; font-size: clamp(0rem, 9.75vh, 6.5rem); font-weight: 100; margin-top: 2.5vh; margin-bottom: 3vh; line-height: .5">the A-List</h1>
+      <h2 style="font-family: 'Feeling Passionate'; font-size: clamp(0rem, 1.5vh, 1rem); font-weight: 100; margin-bottom: 0.01vh; line-height: .5">presented by <span style="font-size: clamp(0rem, 2.25vh, 1.5rem);">Melissa and Vincent</span></h2>
+    </div>
+  </header>
+
+  <main>
+  </main>
+
+  <footer>
+    <div class="container" style="font-family: 'Fine Allie';">
+      <h1 style="font-size: clamp(0rem, 1.5vh, 1rem); font-weight: 100; margin-top: 5vh; margin-bottom: .1vh;">Dr. Sun Yat-Sen Classical Chinese Garden</h1>
+      <h1 style="font-size: clamp(0rem, 1.5vh, 1rem); font-weight: 100; margin-top: 0vh; margin-bottom: .1vh;">Vancouver, British Columbia, Canada</h1>
+    </div>
+    <div class="container">
+      <h1 style="font-family: 'NeoNeon'; font-size: clamp(0rem, 7.5vh, 5rem); font-weight: 100; margin-top: 0vh; margin-bottom: 1vh;">Oct 16, 2027</h1>
+    </div>
+
+    <div class="container">
+      <!-- Display the countdown timer in an element -->
+      <p id="demo"></p>
+      <style>
+        #demo {
+          font-size: clamp(0rem, 1.5vh, 1rem);
+          font-family: 'Fine Allie';
+          font-weight: 100;
+          margin-bottom: 3vh;
+          line-height: .5;
+        }
+      </style>
+
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Oct 16, 2027 15:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for years, months, weeks, days, hours, minutes and seconds
+        var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24) - (365 * years));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        if (years > 0) {
+          document.getElementById("demo").innerHTML =
+            years + " year "
+            + days + " days "
+            + hours + " hours "
+            + minutes + " minutes "
+            + seconds + " seconds ";
+        } else {
+          document.getElementById("demo").innerHTML =
+              days + " days "
+              + hours + " hours "
+              + minutes + " minutes "
+              + seconds + " seconds ";
+        }
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "It's Showtime!";
+        }
+      }, 1000);
+      </script>
+    </div>
+  </footer>
+
+</body>
+</html>

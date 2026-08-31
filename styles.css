@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Feeling Passionate';
+  src: url('fonts/Feeling Passionate.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoNeon';
+  src: url('fonts/NeoNeon.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fine Allie';
+  src: url('fonts/Fine Allie.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  font-family: 'Feeling Passionate';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navigation Bar */
+nav {
+   text-align: center;
+   word-spacing: clamp(0rem, 2vh, 1rem);
+   padding: 10px;
+   background-color: #ffffff;
+   font-family: "Fine Allie";
+}
+
+nav a {
+   color: #000000;
+   text-decoration: none;
+   font-size: larger;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+  min-height: 10vh;
+}
+
+/* The article fills all the space between header & footer */
+body {
+  margin: 0;
+  font-family: "Fine Allie";
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.topnav {
+  font-family: 'NeoNeon';
+  width: 66.5vh;
+  overflow: auto;
+  background-color: #000000;
+  box-sizing: border-box;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topnav a {
+  float: left;
+  padding: 1vh;
+  color: #ffffff;
+  text-decoration: none;
+  width: 16.666%;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #700000;
+  color: white;
+}
