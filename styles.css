@@ -101,11 +101,13 @@ main {
 
 .topnav {
   font-family: 'Fine Allie';
-  width: 66.5vh;
+  max-width: 667px;
+  width: 100%;
   overflow: auto;
   background-color: #000000;
   box-sizing: border-box;
   display: table;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -116,7 +118,7 @@ main {
   color: #ffffff;
   text-decoration: none;
   width: 16.666%;
-  font-size: 1.5vh;
+  font-size: 2vh;
   text-align: center;
 }
 
