@@ -83,10 +83,6 @@ html, body {
   margin: 0;
 }
 
-footer {
-  min-height: 10vh;
-}
-
 /* The article fills all the space between header & footer */
 body {
   margin: 0;
@@ -95,12 +91,16 @@ body {
   flex-direction: column;
 }
 
+footer {
+  min-height: 10vh;
+}
+
 main {
   flex: 1;
 }
 
 .topnav {
-  font-family: 'NeoNeon';
+  font-family: 'Fine Allie';
   width: 66.5vh;
   overflow: auto;
   background-color: #000000;
