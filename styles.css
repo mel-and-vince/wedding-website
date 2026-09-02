@@ -79,8 +79,12 @@ nav a {
 }
 
 html, body {
-  height: 930px;
+  width: auto;
+  max-width: 667px;
+  height: 1000px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* The article fills all the space between header & footer */
@@ -92,7 +96,13 @@ body {
   background-color: black;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 667px 1000px;
+  background-size: cover;
+}
+
+@media (max-width: 667px) {
+  .body {
+    background-size: 667px auto;
+  }
 }
 
 footer {
