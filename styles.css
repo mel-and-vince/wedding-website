@@ -56,7 +56,6 @@
 
 /* Centered text */
 .centered {
-  font-family: 'Feeling Passionate';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,7 +73,6 @@ html, body {
   margin-right: auto;
 }
 
-/* The article fills all the space between header & footer */
 body {
   margin: 0;
   font-family: "Fine Allie";
