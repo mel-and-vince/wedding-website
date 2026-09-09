@@ -65,8 +65,8 @@
 .flex-container {
   display: flex;
   color: rgb(255, 255, 255);
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  border-style: dotted;
 }
 
 .flex-container div {
