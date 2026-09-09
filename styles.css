@@ -62,6 +62,18 @@
   transform: translate(-50%, -50%);
 }
 
+.flex-container {
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container div {
+  margin: 10px;
+  padding: 10px;
+}
+
 html, body {
   width: auto;
   max-width: 667px;
