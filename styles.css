@@ -69,7 +69,7 @@
   margin: auto auto;
   border-style: dotted;
   margin-bottom: 50px;
-  width: calc(90% - 5vw);
+  width: 90%;
   max-width: 667px;
 }
 
