@@ -76,7 +76,7 @@
 .title {
   font-family: Feeling Passionate;
   font-size: clamp(0rem, 4.2vw, 1.5rem);
-  transform: translate(-15%, -50%);
+  transform: translate(-15%, -65%);
   text-align: center;
   width: clamp(0rem, 56vw, 20rem);
   background-color: #700000;
