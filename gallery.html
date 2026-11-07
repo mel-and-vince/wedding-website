@@ -2,8 +2,11 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="gallery.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mel and Vince: The A-List - Gallery</title>
+
+  <script src="Scripts/carousel.js" defer></script>
 
   <!-- Navigation bar -->
   <div class="topnav">
@@ -22,7 +25,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container" style="margin-bottom: 40px;">
         <img src="backgrounds/hawker-w.jpg"
             image-rendering: -webkit-optimize-contrast;
             style="max-width: 100%;
@@ -33,22 +36,53 @@
             font-weight: 100;">
             The Gallery
         </div>
-      </div>
+    </div>
   </header>
 
   <main>
-    <div class="container">
-      <img src="backgrounds/red-seats-t.jpg"
-          image-rendering: -webkit-optimize-contrast;
-          style="max-width: 100%;
-          max-height: 100%;">
-      <div class="centered"
-          style="font-family: 'Feeling Passionate';
-          top: 10%;
-          font-size: clamp(0rem, 5.5vh, 2.75rem);
-          font-weight: 100;
-          width: 100%;">
-          Coming Soon
+    <!-- 1 Year Engagement Photoshoot -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="slide" src="gallery-images/test0.png">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide" src="gallery-images/test1.png">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide" src="gallery-images/test2.png">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Our Travels -->
+    <!-- Through the Years -->
+
+    <br><br><br>
+    <!-- Additional Links -->
+    <div class="flex-container">
+      <div class="title">
+        More Photos
+    </div>
+      <div style="
+        font-family: Fine Allie;
+        font-size: clamp(0rem, 3.5vw, 1.25rem);
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: clamp(0rem, 6vw, 40px);">
+        <a href="https://www.helloikicompany.com/melissa-vince/";
+          style="color: #ffffff;">
+          Singapore Pre-Wedding Photoshoot
+        </a>
       </div>
     </div>
   </main>
