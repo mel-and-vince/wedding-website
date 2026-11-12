@@ -1,26 +1,52 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+class ImageCarousel {
+  constructor(container) {
+    this.container = typeof container === "string"
+      ? document.querySelector(container)
+      : container;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    this.track = this.container.querySelector(".carousel-track");
+    this.images = this.track.querySelectorAll("img");
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    this.currentIndex = 0;
+    this.imageWidth = this.images[0].getBoundingClientRect().width;
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    this.nextButton = this.container.querySelector(".next");
+    this.prevButton = this.container.querySelector(".prev");
+
+    this.nextButton.addEventListener("click", () => this.next());
+    this.prevButton.addEventListener("click", () => this.previous());
+
+    this.update();
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  update() {
+    this.track.style.transform =
+      `translateX(-${this.currentIndex * this.imageWidth}px)`;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+
+  next() {
+    if (this.currentIndex < this.images.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
+    }
+
+    this.update();
+  }
+
+  previous() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.images.length - 1;
+    }
+
+    this.update();
+  }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".carousel").forEach((container) => {
+    new ImageCarousel(container);
+  });
+});

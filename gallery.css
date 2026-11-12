@@ -1,92 +1,57 @@
-.slide {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain;
+@import url("fonts.css");
+
+.gallery-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Fine Allie;
+    color: white;
+    font-size: clamp(0rem, 4.2vw, 1.5rem);
+    text-align: center;
+    width: 100%;
+    background-color: #700000;
+    margin: 10px auto;
+    padding: 10px;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+    gap: 10px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.carousel-window {
+    width: 100%;
+    overflow: hidden;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.carousel-track img {
+    width: 100%;
+    height: 350px;
+    flex: 0 0 auto;
+    object-fit: contain;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.carousel button {
+    color: white;
+    background: #700000;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 10px 10px 10px 10px;
+    user-select: none;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: rgba(112,0,0,1);
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.carousel button:hover {
+    background-color: rgba(112,0,0,0.5);
 }

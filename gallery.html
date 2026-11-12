@@ -25,7 +25,7 @@
 
 <body>
   <header>
-    <div class="container" style="margin-bottom: 40px;">
+    <div class="container" style="margin-bottom: 0px;">
         <img src="backgrounds/hawker-w.jpg"
             image-rendering: -webkit-optimize-contrast;
             style="max-width: 100%;
@@ -41,50 +41,35 @@
 
   <main>
     <!-- 1 Year Engagement Photoshoot -->
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img class="slide" src="gallery-images/test0.png">
+    <div class="gallery-title">One Year Engagement Shoot in Singapore</div>
+    <div class="carousel">
+      <button class="prev" aria-label="Previous images">&#10094;</button>
+      <div class="carousel-window">
+          <div class="carousel-track">
+              <img src="gallery-images/test0.png" alt="Image 1">
+              <img src="gallery-images/test1.png" alt="Image 2">
+              <img src="gallery-images/test2.png" alt="Image 3">
+              <img src="gallery-images/test3.png" alt="Image 4">
+          </div>
       </div>
-
-      <div class="mySlides fade">
-        <img class="slide" src="gallery-images/test1.png">
-      </div>
-
-      <div class="mySlides fade">
-        <img class="slide" src="gallery-images/test2.png">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <button class="next" aria-label="Next images">&#10095;</button>
     </div>
 
     <!-- Our Travels -->
+    <div class="gallery-title">Adventures and Travels</div>
+    <div class="carousel">
+      <button class="prev" aria-label="Previous images">&#10094;</button>
+      <div class="carousel-window">
+          <div class="carousel-track">
+              <img src="gallery-images/test1.png" alt="Image 2">
+              <img src="gallery-images/test3.png" alt="Image 3">
+              <img src="gallery-images/test4.png" alt="Image 4">
+          </div>
+      </div>
+      <button class="next" aria-label="Next images">&#10095;</button>
+    </div>
     <!-- Through the Years -->
 
-    <br><br><br>
-    <!-- Additional Links -->
-    <div class="flex-container">
-      <div class="title">
-        More Photos
-    </div>
-      <div style="
-        font-family: Fine Allie;
-        font-size: clamp(0rem, 3.5vw, 1.25rem);
-        text-align: center;
-        margin-top: -30px;
-        margin-bottom: clamp(0rem, 6vw, 40px);">
-        <a href="https://www.helloikicompany.com/melissa-vince/";
-          style="color: #ffffff;">
-          Singapore Pre-Wedding Photoshoot
-        </a>
-      </div>
-    </div>
   </main>
 
   <!-- <footer>
